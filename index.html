@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .btn{
+            width: 20%;
+            font-size: 25px;
+            color: #fff;
+            border: 1px solid black;
+            border-radius: 50px;
+
+        }
+        button:hover{
+            background-color: green;
+            cursor: pointer;
+        }
+        #btn{
+            width:200px;
+            height: 30px;
+            border-radius: 20px;
+            font-size: 20px;
+            color: white;
+            background-color: rgb(183, 78, 236);
+        }
+
+    </style>
+    <script src="first.js"></script>
+    <link rel="stylesheet" href="handling.css">
+</head>
+<body>
+    
+<p class="para" id="title">Hi I am Web Developper</p>
+<a class="btn" style="background-color: #f4511e; color: #fff; border: 2px solid green; border-radius:10px; font-size: 20px; text-decoration: none; padding: 10px;"  href="https://facebook.com">Click here</a>
+<br><br>
+
+<div class="main-container">
+   <div  onclick="show()" class="box" id="box-1">
+<p>hi i am a software developer </p>
+</div>
+    <div class="box box-2" id="box-2" ></div>
+    <div onclick="show()" class="box" id="box-3"></div>
+    <div class="box box-4" id="box-4"></div>
+    <div class="box box-5" ></div>
+</div>
+</form>
+
+    <button  id="btn" type="submit">submit</button>
+
+ 
+<div class="form-container">
+    <div class="form-section">
+        <h1>Login Form</h1>
+        <form action="" method="post" onsubmit="return validateForm()">
+        <input type="text" onfocus="onClick()" name="username" class="inp" id="user" placeholder="Username">
+        <p class="userEr" id="userError"></p>
+        <br>
+        <input type="password" onfocus="onClick1()" name="password" class="inp" id="pass" placeholder="Password">
+        <p class="passEr" id="passError"></p>
+        <br>
+        <button id="sub-btn" type="submit">Submit</button>
+    </form>
+    </div>
+</div>
+<script src="EventsHandling.js"></script>
+<script src="jquery-3.7.1.min.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js">
+</script>
+</html>
